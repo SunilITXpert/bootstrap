@@ -1,48 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uber Eats | Food Delivery and Takeout | Order Online from Restaurants Near You</title>
-    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/scss/helpers/_icon-link.scss">
-    <link rel="stylesheet" href="./assets/css/main.css">
-</head>
-<body class="m-0 p-0" id="scroll">
-    <main>
-        <section class="hero container-fluid m-0 p-0">
-         <div class="fix-header">
-         <div class="container p-4 padding-0">
-            <nav class="navbar container">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="#"><img height="16" src="./assets/img/uber-eats-logo.svg"></a>
-                  <ul class="navbar-nav ms-auto flex-row" >
-                    
-                    <li class="nav-item">
-                        <a href="#" class="btn  bg-white rounded-pill">Log in</a>  
-                    </li>
-                    <li class="nav-item"> <a href="#" class="btn bg-black text-white rounded-pill">Sign up</a>
-                    </li>
-                    </ul>
-                </div>
-              </nav>
-         </div>
-        </div>
-        </section>
-        <section style="height: 1000px;">test content</section>
-    </main>
-    <script>
-        window.onscroll = function() {scrollFunction()};
 
-function scrollFunction() {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    document.getElementById("scroll").classList.add("scrolling");
-  } else {
-    document.getElementById("scroll").classList.remove("scrolling");
-  }
-}
-    </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script> 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Uber Eats | Food Delivery and Takeout | Order Online from Restaurants Near You</title>
+  <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="./assets/css/main.css" />
+</head>
+
+<body class="m-0 p-0" id="scroll">
+  <main>
+    <section class="hero container-fluid m-0 p-0">
+      <div class="fix-header">
+        <div class="container p-2 padding-0">
+          <nav class="navbar container">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img height="16" src="./assets/img/uber-eats-logo.svg" /></a>
+              <button type="button" class="btn btn-hover d-none show-btn bg-black text-white rounded-pill px-3 ms-4"
+              data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;Enter
+                delivery address &nbsp;<i class="fa-solid fa-angle-down"></i>
+              </button>
+              <ul class="navbar-nav ms-auto flex-row">
+                <li class="nav-item">
+                  <a href="#" class="btn btn-sm bg-white rounded-pill">Log in</a>
+                </li>
+                <li class="nav-item ms-3">
+                  <a href="#" class="btn btn-sm bg-black text-white rounded-pill">Sign up</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </section>
+    <section style="height: 1000px">test content</section>
+  </main>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+      <div class="modal-body">
+        <h3 class="mb-3">Enter delivery address</h3>
+        <form action="#">
+          <div class="row">
+            <div class="col border rounded-pill border-dark pt-3 pb-1 m-2 border-2">
+              <div class="row">
+                <div class="col-md-1"><i class="fa-solid fa-magnifying-glass"></i></div>
+                <div class="col-md-10 p-0"><input type="text" placeholder="Search for an address" aria-label="Search for an address" class="border-0 form-control input-search-p"></div> 
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      
+    </div>
+  </div>
+</div>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+ <script src="./assets/js/custom.js"></script>
 </body>
+
 </html>
