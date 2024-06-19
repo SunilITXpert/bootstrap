@@ -1,0 +1,26 @@
+.hero{
+    background: center / cover no-repeat url('../img/bg-image.webp');
+    height: 100vh;
+}
+.scrolling .fix-header{
+    background: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: background-color ease 0.8s;
+    padding: 12px 0;
+}
+.scrolling .fix-header .padding-0{
+    padding: 0px!important; 
+}
+@media only screen and (min-width:1920px) {
+    .container{
+        max-width: 1920px;
+    }
+  }
+
+@media only screen and (max-width:900px) {
+    .hero{
+        background: center / cover no-repeat url('../img/bg-image-mobile.webp');
+    }
+}
