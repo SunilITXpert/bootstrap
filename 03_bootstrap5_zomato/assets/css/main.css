@@ -97,6 +97,11 @@ button.navbar-toggler:focus{
     display: none;
     cursor: pointer;
 }
+.hover-effect:hover{
+    box-shadow: rgba(28, 28, 28, 0.08) 0px 4px 8px;
+    transition: 0.4s;
+    
+}
 @media screen and (min-width: 1400px) {
     .container{
         max-width: 1080px;

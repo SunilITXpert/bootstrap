@@ -1,0 +1,16 @@
+body{
+    color:#3d4152
+}
+.thme-color{
+    color: #3d4152;
+}
+.hover-orange:hover{
+ color: #f66e14;
+ border-color: #f66e14!important;
+}
+.sup-custom{
+    left: -10px!important;
+    text-transform: uppercase; 
+    position: relative;
+    font-size: 12px !important;
+}
