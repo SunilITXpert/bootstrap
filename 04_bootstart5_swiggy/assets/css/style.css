@@ -4,6 +4,13 @@ body{
 .thme-color{
     color: #3d4152;
 }
+header{
+    box-shadow: 0 15px 40px -20px rgba(40,44,63,.15);
+}
+.m-shift{
+   width: 70%;
+   margin: 0 auto;
+}
 .hover-orange:hover{
  color: #f66e14;
  border-color: #f66e14!important;
@@ -13,4 +20,30 @@ body{
     text-transform: uppercase; 
     position: relative;
     font-size: 12px !important;
+}
+.offcanvas-size-xl.offcanvas{
+    width: 40%;
+    --bs-offcanvas-width:40%;
+}
+.form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    font-weight: 700;
+}
+
+.form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    font-weight: 700;
+}
+
+.form-control::-ms-input-placeholder { /* Microsoft Edge */
+    font-weight: 700;
+}
+.form-control:focus {
+    color: #fff;
+    box-shadow: 0 0 0 .25rem rgba(243, 244, 245, 0.25);
+    outline: 0;
+    border-color: #ccc;
+}
+.for-gps{
+    font-size: .80rem;
+    position: relative;
+    left: -25px;
 }
